@@ -1,3 +1,7 @@
+int xPosition = 75;
+int yPosition = 75;
+int diameter = 50;
+
 void setup() {
 	size(500, 500);
 }
@@ -19,7 +23,10 @@ void draw() {
   stroke(0);
   fill(175);
 
-
+  ellipse(xPosition,yPosition, diameter, diameter);
+  ellipse(xPosition,yPosition + 150, diameter, diameter);
+  ellipse(xPosition + 150,yPosition, diameter, diameter);
+  ellipse(xPosition + 150,yPosition + 150, diameter, diameter);
   
  
 }
